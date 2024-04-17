@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   a{
+       text-decoration: none;
+       font: inherit;
+   }
+   img, video, svg{
+       display: inline-block;
+       min-width: 100%;
+   }
+   header{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 1rem 9.5rem;
+       width: 100vw;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 3;
+       background-color: rgba(0, 0, 0, 0);
+   }
+   .logo{
+       width: 9rem;
+   }
+   .logo svg{
+       color: rgb(229, 9, 20);
+       fill: currentColor;
+   }
+   header > a{
+       padding: 6px 14px;
+       background-color: rgb(229, 9, 20);
+       color: #fefefe;
+       border-radius: 5px;
+       font-size: 13px;
+       font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+       font-weight: 700;   
+   }
+   section{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c1366fb4-3292-4428-9639-b73f25539794/dc905d8b-0f80-40e4-a471-964ef99dcbf5/NG-en-20240408-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    width: 100vw;  
+    height: 100vh;
+    color: #fefefe; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+   }
+   section::after{
+       position: absolute;
+       inset: 0;
+       content: "";
+       z-index: 1;
+       background: radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 40%);
+   }
+   section > div{
+       position: relative;
+       z-index: 2;
+       margin-block-start: 8rem;
+       width: min(60vw);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   h1{
+       font-size: 2.1rem;
+       font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+       font-weight: 700;
+       width: 100%;
+   
+   }
+   p{
+       font-size: 1.125rem;
+       font-weight: 400;
+       font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+       margin-block-start: 1rem;
+       text-align: center;
+       width: 100%;
+   }
+   input{
+       background-color: rgba(70, 90, 126, 0.4);
+       padding: 1.5rem 1rem 0.5rem;
+       flex: 1 1;
+   
+   }
+   form{
+       display: flex;
+       margin-block-start: 1rem;
+       gap: 0.5rem;
+       width: 100%;
+   }
+   button{
+       background-color: rgb(229, 9, 20);
+       color: #fefefe;
+       font-size: 1.5rem;
+       font-weight: 500;
+       padding: 0.75rem 1.5rem;
+       display: inline-flex;
+       align-items: center;
+       line-height: 1;
+       justify-content: center;
+       border-radius: 0.25rem;
+       min-height: 3.5rem;
+       flex-basis: 33%;
+   }
+   button i{
+       margin-inline-start: 8px;
+       line-height: 1;
+       font-size: 1.2rem;
+       
+   }
+   
